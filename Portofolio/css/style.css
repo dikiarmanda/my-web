@@ -1,0 +1,56 @@
+.jumbotron {
+    margin-bottom: 2rem;
+    border-radius: .3rem;
+    background-color: #a2d9ff;
+    overflow: hidden;
+}
+
+.jumbotron .rounded-circle {
+    width: 200px;
+    border: 5px solid rgb(61, 61, 61);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    padding-top: 5rem;
+}
+
+hr {
+    width: 250px;
+    border-top: 3px solid rgb(122, 122, 122);
+}
+
+.pLeft, .pRight {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1s;
+}
+
+.pRight {
+    transform: translate(50px, 0);
+}
+
+.pLeft.pMuncul, .pRight.pMuncul {
+    opacity: 1;
+    transform: translate(0,0);
+} 
+
+.projects {
+    background-color: #a2d9ff;
+}
+
+.projects .card {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: .5s;
+}
+
+.projects .card.muncul {
+    opacity: 1;
+    transform: translate(0,0);
+    padding: 5px;
+}
+
+footer p, footer a {
+    text-decoration: none;
+}
